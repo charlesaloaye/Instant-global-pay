@@ -1,4 +1,4 @@
-
+<?php includes('app') ?>
 <main class="flex-center w-h-100">
 
     <div class="">
@@ -15,6 +15,6 @@
             <a href="/logout" class="btn btn-success px-5 py-3">Logout</a>
 
 
-    </div>
+        </div>
 
 </main>

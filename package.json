@@ -1,0 +1,22 @@
+{
+  "name": "instantpay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshualeexy/Instant-global-pay.git"
+  },
+  "author": "Kevwe Joshua/Adomi Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshualeexy/Instant-global-pay/issues"
+  },
+  "homepage": "https://github.com/Joshualeexy/Instant-global-pay#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "scripts":{
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  }
+}

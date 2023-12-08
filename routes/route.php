@@ -5,32 +5,56 @@ $uri = $fulluri['path'];
 
 $routes = [
     '/' =>   [
-        'path'    => views('index'), 'title'     => 'Homepage'
+        'path'    => views('index'),
+        'title'     => 'Homepage',
+        'middleware'    => 'noauth'
+
     ],
 
     '/login' => [
-        'path'    => views('auth.login'), 'title'     => 'Login'
+        'path'    => views('auth.login'),
+        'title'     => 'Login',
+        'middleware'    => 'noauth'
 
     ],
 
     '/register' => [
-        'path' => views('auth.register'), 'title'     => 'Register'
+        'path' => views('auth.register'),
+        'title'     => 'Register',
+        'middleware'    => 'noauth'
+
+    ],
+
+    '/profile' => [
+        'path'          => views('profile'),
+        'title'         => 'Profile',
+        'middleware'    => 'auth'
     ],
 
     '/pin' => [
-        'path' => views('auth.pin'), 'title'     => 'Pin'
+        'path' => views('auth.pin'),
+        'title'   => 'Pin',
+        'middleware'    => 'noauth'
+
     ],
 
     '/dashboard' => [
-        'path' => views('dashboard'), 'title'     => 'Dashboard'
+        'path' => views('dashboard'),
+        'title'     => 'Dashboard',
+        'middleware' => 'auth'
     ],
 
     '/verify' => [
-        'path' => views('auth.verify'), 'title'     => 'Verify'
+        'path' => views('auth.verify'),
+        'title'     => 'Verify',
+        'middleware'    => 'noauth'
+
     ],
     '/logout' => [
         'path' => views('auth.logout'),
-        'title'     => 'Logout'
+        'title'     => 'Logout',
+        'middleware'    => 'auth'
+
     ]
 ];
 
