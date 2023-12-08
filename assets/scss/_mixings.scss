@@ -1,0 +1,19 @@
+@import 'variables';
+@mixin flex-center ($direction : row,$gap:20px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+  flex-direction: $direction;
+}
+
+@mixin style-reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@mixin resetinput{
+  border: none;
+  outline: transparent;
+}
