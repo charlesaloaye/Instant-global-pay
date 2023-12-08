@@ -36,8 +36,8 @@ function _id(id){
            }
          });
 
-       
-// ssh-keygen -t ed25519 -C "oghenekevwejoshualee@gmail.com"
+
+
 
 
 
